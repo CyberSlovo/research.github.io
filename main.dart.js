@@ -49331,7 +49331,7 @@ s=t.E
 return new A.tg(new A.po(B.H8,new A.Gp(q,q,1/0,56),q),A.xg(A.Lc(A.a([A.a83(B.H7,r.gO5()),A.Lc(A.a([B.r_,B.H6,A.a3u(r.e,A.bc(b).ad.ch)],s),B.d1),new A.pr(new A.Zp(r),q,q,q,t.xj)],s),B.AF),q,q),q)},
 l6(){var s=0,r=A.a1(t.z),q
 var $async$l6=A.a2(function(a,b){if(a===1)return A.Z(b,r)
-while(true)switch(s){case 0:q=A.jz("https://cyberslovo.app:1443/auth/realms/Google/protocol/openid-connect/auth?client_id=account&response_type=code&code_challenge=ph51GYdDRa7WKARbCf7Fnqym90h7gN9HvVvykj1uTAc&code_challenge_method=S256&redirect_uri=https://www.cyberslovo.app/wa-research/",0,null)
+while(true)switch(s){case 0:q=A.jz("https://cyberslovo.app:1443/auth/realms/Google/protocol/openid-connect/auth?client_id=account&response_type=code&redirect_uri=https://www.cyberslovo.app/wa-research/",0,null)
 s=5
 return A.Y(A.a18(q),$async$l6)
 case 5:s=b?2:4
