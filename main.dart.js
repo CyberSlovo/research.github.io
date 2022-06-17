@@ -15640,13 +15640,11 @@ _.d=a
 _.e=b
 _.f=c
 _.r=d},
-a8g(){var s,r,q=$.ac1(),p=J.a7F(32,t.S)
-for(s=0;s<32;++s)p[s]=q.US(256)
-r=B.jo.gfK().bu(p).split("=")[0]
-q=B.u4.bu(B.dF.bu(r))
-return new A.Sk(r,B.jo.gfK().bu(q.a).split("=")[0])},
-Sk:function Sk(a,b){this.a=a
-this.b=b},
+a8g(){var s,r=$.ac1(),q=J.a7F(32,t.S)
+for(s=0;s<32;++s)q[s]=r.US(256)
+r=B.u4.bu(B.dF.bu(B.jo.gfK().bu(q).split("=")[0]))
+return new A.Sk(B.jo.gfK().bu(r.a).split("=")[0])},
+Sk:function Sk(a){this.b=a},
 a8h(a,b,c){if(c&&a.a===B.aH)throw A.b(A.k9("`const Object()` cannot be used as the token."))
 if(b!==a.a)throw A.b(A.k9("Platform interfaces must not be implemented with `implements`"))},
 Sn:function Sn(){},
@@ -49851,15 +49849,15 @@ return s}}
 A.Ko.prototype={
 iS(){return A.u(t.N,t.z)}}
 A.Oz.prototype={
-kx(){var s=0,r=A.a0(t.H),q=this,p
+kx(){var s=0,r=A.a0(t.H),q
 var $async$kx=A.a1(function(a,b){if(a===1)return A.Y(b,r)
-while(true)switch(s){case 0:p=A.hi("https://cyberslovo.app:1443/auth/realms/Google/protocol/openid-connect/auth?client_id=account&response_type=code&code_challenge="+q.a.b+"&code_challenge_method=S256&redirect_uri=https://www.cyberslovo.app/wa-research/",0,null)
+while(true)switch(s){case 0:q=A.hi("https://cyberslovo.app:1443/auth/realms/Google/protocol/openid-connect/auth?client_id=account&response_type=code&redirect_uri=https://www.cyberslovo.app/wa-research/",0,null)
 s=5
-return A.W(A.JB(p),$async$kx)
+return A.W(A.JB(q),$async$kx)
 case 5:s=b?2:4
 break
 case 2:s=6
-return A.W(A.JJ(p,"_self"),$async$kx)
+return A.W(A.JJ(q,"_self"),$async$kx)
 case 6:s=3
 break
 case 4:A.m2("----------------> cant launch url")
@@ -49867,35 +49865,35 @@ case 3:return A.Z(null,r)}})
 return A.a_($async$kx,r)}}
 A.OC.prototype={
 n0(a){return this.EG(a)},
-EG(a){var s=0,r=A.a0(t.N),q,p=this,o,n,m,l,k,j
+EG(a){var s=0,r=A.a0(t.N),q,p,o,n,m,l,k
 var $async$n0=A.a1(function(b,c){if(b===1)return A.Y(c,r)
-while(true)switch(s){case 0:m=t.N
-l=A.aE(["Content-Type","application/x-www-form-urlencoded"],m,m)
-k=A.aE(["grant_type","authorization_code","client_id","account","code",a,"redirect_uri","https://www.cyberslovo.app/wa-research/","code_verifier",p.a.a],m,t.w)
+while(true)switch(s){case 0:n=t.N
+m=A.aE(["Content-Type","application/x-www-form-urlencoded"],n,n)
+l=A.aE(["grant_type","authorization_code","client_id","account","code",a,"redirect_uri","https://www.cyberslovo.app/wa-research/"],n,t.w)
 s=3
-return A.W(A.ao8(A.hi("https://cyberslovo.app:1443/auth/realms/Google/protocol/openid-connect/token",0,null),k,l),$async$n0)
-case 3:j=c
-m=j.b
-if(m!==200)throw A.b(A.bO("http.post error: statusCode= "+m))
-o=B.ae.tT(0,A.ab_(J.aF(A.aa5(j.e).c.a,"charset")).ct(0,j.x),null)
-m=J.ab(o)
-n=m.j(o,"access_token")
+return A.W(A.ao8(A.hi("https://cyberslovo.app:1443/auth/realms/Google/protocol/openid-connect/token",0,null),l,m),$async$n0)
+case 3:k=c
+n=k.b
+if(n!==200)throw A.b(A.bO("http.post error: statusCode= "+n))
+p=B.ae.tT(0,A.ab_(J.aF(A.aa5(k.e).c.a,"charset")).ct(0,k.x),null)
+n=J.ab(p)
+o=n.j(p,"access_token")
 A.aT($,"accessToken")
-m.j(o,"expires_in")
+n.j(p,"expires_in")
 A.aT($,"expiresIn")
-m.j(o,"refresh_expires_in")
+n.j(p,"refresh_expires_in")
 A.aT($,"refreshExpiresIn")
-m.j(o,"refresh_token")
+n.j(p,"refresh_token")
 A.aT($,"refreshToken")
-m.j(o,"token_type")
+n.j(p,"token_type")
 A.aT($,"tokenType")
-m.j(o,"not_before_policy")
+n.j(p,"not_before_policy")
 A.aT($,"notBeforePolicy")
-m.j(o,"session_state")
+n.j(p,"session_state")
 A.aT($,"sessionState")
-m.j(o,"scope")
+n.j(p,"scope")
 A.aT($,"scope")
-q=A.d(n,"accessToken")
+q=A.d(o,"accessToken")
 s=1
 break
 case 1:return A.Z(q,r)}})
